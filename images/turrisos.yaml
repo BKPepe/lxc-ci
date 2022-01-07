@@ -1,0 +1,200 @@
+image:
+  distribution: Turris OS
+
+source:
+  downloader: turris-http
+  url: https://repo.turris.cz/
+  keys:
+  # HBS, HBT
+  - |-
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Comment: OpenWrt 21.02 public key
+
+    mQINBGAxDKABEADFofbu6NlHoSG+2/cp7wuTzp5iaEOWoitN1k7K7htQwJf2OHsa
+    kvSAUJm1XQi/2mz+v67UnDeUY8TpFqjMW6d1h8YU/lH0rMoUV14W51xLrad4SO67
+    cfEWfm4b9LNHO5gbxY3Wzh8RYgaXUdyeTUwjChilaiMmPCp6ES3ZPyjJbI0/NhNJ
+    U/4Yn3/R+8rgdmWAI1CEMmVQzxT2UvS0YlgIxcI17nLGz+EQF3NAQILXSs3vA368
+    scP7LqjMnGFY+FJ7ZztzlQ23agPbNml1Ii0xc0GkQYG2jTRfBYnrm03LvQOw3h6u
+    1odWCVDdEz/9yhUySCq8y8YtRKRze+/mkWRA+88Vb6rn8rGo/BcAil/Foz3m5y+0
+    7to8UDnKYFx0iJwDuBsEu9lkajyFrYSKBQzLuQc+UZ71E/GTBBqhyZqCkXZZmS8p
+    tWBCfPe5DVBZAcCt+jkjcSrx8RjSwxur76T1ChJ7A1TCQR/hwyVOejF1QjRotDkc
+    +z5kSHY3vkIaWaPx6sy53fCqoxSvtglXzXtpco0yNdrT/cgrOzIYcQFiMS1W1WS6
+    UrBWXUa+FWJgT1DVUFNbKwIm/WwEmq+GjCiO+43VVxdLJtAGiooq9t6fcYq4BhyG
+    Pvepdtx/wokxK7m6aqT3jWgp4XMlThcIyFhbpQbgUu1Yol7Ce9JxamHk/wARAQAB
+    tFNPcGVuV3J0IEJ1aWxkIFN5c3RlbSAoUEdQIGtleSBmb3IgMjEuMDIgcmVsZWFz
+    ZSBidWlsZHMpIDxwZ3BzaWduLTIxLjAyQG9wZW53cnQub3JnPokCVAQTAQoAPhYh
+    BGZyBeN5uvNIhjpcZojKWeiPaBWABQJgMQygAhsDBQkDwmcABQsJCAcCBhUKCQgL
+    AgQWAgMBAh4BAheAAAoJEIjKWeiPaBWAUo8P/2gNjI9KMR2gHPIKGcfJHDP2SnUU
+    aBdwOn2xThdO2s6BKp1Tri3tM6cIhfQC3T/16Kp4pjD/XC6oiNnTbsHz0i7Xvjje
+    rTMKoG1RaRB0habJL3E/ENPS3glPp5t7wZfLbMOkSbDbvw6oNI1p2D4N4Q1nydn4
+    f14eRnn2s0tuJ2hR2P9n7qIKtnIa+E3MoVLR9v7zzWWfezyDR/PMd+UgyeSwl5z6
+    sAwv1wwtH8vDNEZrqfwRn6HeeSeFXxwUaXhO18teD/fEYCvprITX5f3cY05OZPDE
+    Huoy9KAHSvsn+pfqCrPnXG0kGoT8bjEPN3EbRddaVPnSzz0DJjc5AW9wa5EdCkSg
+    umrBeHQYbcqyShpcjsMMzs2KezK29ptv/E9lh1wxtUmJ7kIhCpryPpcKB5PjuOWn
+    iRbNML//Oea7btX0mT6MGmbMP5A4hywWUa8hSPa/1Gub0j1ixvT9a7vf1jZDrgDH
+    dMpgWJCzWx/NFtg+yoaFVscnq+ULzWmGjyrZ8Oe1+2E+ytwqJleh0WXLMOEKjzR4
+    ZobE9qwYdrfL1n0BOqvQqLiYEM4pAyNGRxCvnNBmQD00iN4zbYqPWiAbUTBvuhrb
+    iASt9kwk/3zW6p1acAHDmQZTN40OWZum0cssPr340z8Q7WFZ2LBIMqWkwNa5x3Oi
+    d4lvvwxgcNDv+KOMuQINBGAxDKABEADSQdK7L30Gz4cj76S7yDRx/HMljPRwdwoD
+    pcH74WdZLzaM0cagzCXmuEfQmRgJmmG0edyL7sSL+II+wlFmU6TYnt9lM3kLmIGm
+    Rl66SJVMAk0nKTX2bFnU8KP8yJC0mcfvJy57Dr999V7TXnKzTEIsFQRn93fkwp4u
+    1bs/yMCsbF558TRAErfXYUDbw+sj4yZ5eV2B4eFWN2/g6BwFDxHoo3DdAc6Exg+7
+    XodLEEpMElM0qXPL4wWoPbCwYZ/CDGLRYPRGXwURCRQ6ZOY++ia6QqbL7JmDXHPa
+    zhcB0GIIH8r/O3wFUifLczif13+hP1L6AoWchp9M0iTwCjGqouvG68JBGUuaPhvv
+    TwQ2949SDT8awDVKFEi4GlgGYOR3knKTqvNm9mtw32cWWBGjOorN1dRTqkgmoXle
+    4GsHBncEjZjamaK7X9h+YA1F43WnsMuRuuS3Y6oysbClBxZgPwDvJJP3EFiIh1Hc
+    T4r/G9G0FjrQHVcQl8QWk40QheS3pWd4L9VK1ijNS9Cew+d/X6OgHakESGt5weNK
+    wtA/uHqcsSaeJIL2Ok2e3C7JTXNFf+XQs0SVFaswuryEiZ/t0LG8rEZY31ZAS/wK
+    Xd4SW45SVXJMtybqxQuFrYTeFl0hxd5qfALVf6CiLh5uI9aJf4XBn7wD86yBHkfn
+    BIACpWweawARAQABiQI8BBgBCgAmFiEEZnIF43m680iGOlxmiMpZ6I9oFYAFAmAx
+    DKACGwwFCQPCZwAACgkQiMpZ6I9oFYAY6RAAwpS+42+jC8v8hHuORjaInQ7zC9RD
+    VXc3c6jJRqGvyX5xww4tOurfxN88kEwWfsHXNHSUSDF6CjjNitLqSkyR351fdFby
+    kiKE11Cg1VPaeLsAaSFLDpxZmhVGufqs0VJEdJAtHJUOGcC62mWA4ZuKiT3jVLrc
+    EJfBSYtoqrqk2kDP4G69fD84MP2pDThq4buCTDCoQqZXh2GQJRg7C0K7u7jY9Fao
+    ji73VQrf+ds3MQwA7UoXqG9tEBL+XAM7MbkphzyMFMetTGSsKHyVtNMJZsowzkrv
+    JxmKm0cDgEYeZpcSqVZygWtAAVUwzsx7GEVqeGoe1+wsm8YD+HsMAzbc7cDHGLSc
+    Hqx2nXsh9NWwfVB7nWsZ7QcNdkGsTLjhZk8v8+a6yIuq/yNTPexGskZft/00SI9k
+    zPHO196lTeCnkdDFgbkUprhMgOi70FOw4xhhZiIa3I8150ZkoZ19fIAV/bf2RCMX
+    1xQSgKFYnfb9gtP93Bz342u/P9dNy64aZxRg+Qtg2PTIMIozAIsfhEMqvAFM+I1/
+    nEzqqHE3tQzZhD0y2NWVeEbJ5MBJkK0sKYJtXW9Muw3acPS1XIQ92MmjO00mFIoT
+    9PrMw4utdbCUDzqpOhViiv/rCMsTJe6MnchlDACRnliv2eQuevfzRfWtfIweGfoJ
+    DAT8f8syxL8GNRw=
+    =Odut
+    -----END PGP PUBLIC KEY BLOCK-----
+
+  # HBK, HBL, HBD (devel key)
+  - |-
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Comment: OpenWrt 19.07 public key
+
+    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
+    =u3sV
+    -----END PGP PUBLIC KEY BLOCK-----
+
+targets:
+  lxc:
+    create_message: |
+      You just created an {{ image.distribution }} container.
+    config:
+    - type: all
+      content: |-
+        lxc.include = LXC_TEMPLATE_CONFIG/common.conf
+
+    - type: user
+      content: |-
+        lxc.include = LXC_TEMPLATE_CONFIG/userns.conf
+
+    - type: all
+      content: |-
+        lxc.arch = {{ image.architecture_kernel }}
+
+files:
+- path: /etc/hostname
+  generator: hostname
+
+- path: /etc/hosts
+  generator: hosts
+
+- path: /etc/config/network
+  generator: dump
+  content: |-
+    config interface 'loopback'
+        option ifname 'lo'
+        option proto 'static'
+        option ipaddr '127.0.0.1'
+        option netmask '255.0.0.0'
+
+    config interface 'wan'
+        option ifname 'eth0'
+        option proto 'dhcp'
+
+    config interface 'wan6'
+        option ifname 'eth0'
+        option proto 'dhcpv6'
+
+packages:
+  manager: opkg
+  update: false
+  cleanup: true
+  sets:
+  - packages:
+    - sudo
+    action: install
+
+actions:
+- trigger: post-unpack
+  action: |
+    #!/bin/sh
+    mkdir -p /var/lock
+    echo "console::askfirst:/usr/libexec/login.sh" >> /etc/inittab
+  architectures:
+  - amd64
+
+- trigger: post-files
+  action: |
+    #!/bin/sh
+
+    # Disable process isolation to make dnsmasq work
+    sed -i 's/procd_add_jail/# \0/g' /etc/init.d/dnsmasq
+  releases:
+  - snapshot
